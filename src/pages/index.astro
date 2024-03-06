@@ -2,9 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 
 import Header from "../components/Header.jsx"
+import Home from "../components/Home.astro"
+import Experiencie from "../components/Experiencie.astro"
 ---
 
 <Layout title="Christopher Romero - Desarrollador Frontend Junior React">
 	<Header client:load/>
+	<main>
+		<Home />
+		<Experiencie />
+	</main>
 </Layout>
 

@@ -14,7 +14,7 @@ function Header() {
           <span class="text-cyan-400">.dev</span>
         </h1>
 
-        <nav class={`fixed top-0 right-0 w-3/5 sm:w-2/4 h-screen bg-black/20 backdrop-blur-md transition-all ${menu ? "translate-x-0" : "translate-x-full"} md:static md:w-auto md:h-auto md:bg-transparent md:translate-x-0`}>
+        <nav class={`fixed top-0 right-0 w-3/5 sm:w-2/4 h-screen bg-black/80 backdrop-blur-md transition-all ${menu ? "translate-x-0" : "translate-x-full"} md:static md:w-auto md:h-auto md:bg-transparent md:translate-x-0`}>
           <ul class="flex flex-col gap-2 h-full justify-center text-center p-5 md:flex-row md:p-0 md:text-sm lg:text-base">
             <li>
               <a onClick={()=>setMenu(false)} class="block bg-white/5 rounded-md px-4 py-1 hover:bg-white/5 transition-colors" href="#inicio">Inicio</a>
