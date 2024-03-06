@@ -1,3 +1,76 @@
-<section>
-  
+---
+import Briefcase from "../icons/astro/Briefcase.astro";
+---
+
+<section
+  id="#experiencia"
+  class="container w-full mx-auto md:max-w-2xl lg:max-w-4xl"
+>
+  <div class="px-2 py-8 sm:py-10 md:py-16">
+    <h2 class="flex gap-2 items-center font-semibold text-xl sm:text-2xl md:text-3xl tracking-wide">
+      <Briefcase class="size-8" />
+      Experiencia laboral
+    </h2>
+    <ol class="relative mt-16">
+      <li class="">
+        <div
+          class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+        >
+          <div class="relative pb-12 md:col-span-2">
+            <div class="sticky top-0">
+              <span
+                class="text-cyan-400 -left-[42px] absolute rounded-full text-5xl"
+                >•</span
+              >
+              <h3 class="text-xl font-bold text-cyan-400">
+                Freelancer
+              </h3>
+              <h4 class="font-semibold text-xl text-white">
+                Web
+              </h4>
+              <time class="p-0 m-0 text-sm text-white/80"
+                >Actualmente...</time
+              >
+            </div>
+          </div>
+          <div class="relative flex flex-col gap-2 pb-4 text-gray-300 md:col-span-3">
+            <ul class="list-disc ml-4 flex flex-col gap-2">
+              <li>Me dedico al desarrollo de páginas web a medida.</li>
+              <li>Enfocado en la funcionalidad para superar las expectativas del cliente</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="">
+        <div
+          class="relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+        >
+          <div class="relative pb-12 md:col-span-2">
+            <div class="sticky top-0">
+              <span
+                class="text-cyan-400 -left-[42px] absolute rounded-full text-5xl"
+                >•</span
+              >
+              <h3 class="text-xl font-bold text-cyan-400">
+                Desarrollador Frontend Junior
+              </h3>
+              <h4 class="font-semibold text-xl text-white">
+                Municipalidad Distrital
+              </h4>
+              <time class="p-0 m-0 text-sm text-white/80"
+                >Setiembre 2023 - Noviembre 2023</time
+              >
+            </div>
+          </div>
+          <div class="relative flex flex-col gap-2 pb-4 text-gray-300 md:col-span-3">
+            <ul class="list-disc ml-4 flex flex-col gap-2">
+              <li>Realizar la parte de UX/UI del módulo de inventario de su intranet.</li>
+              <li>Consumir las apis por parte del backend hecho con laravel</li>
+              <li>Manejar los estados de los datos con React para mostrarlos en la UI</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
 </section>
