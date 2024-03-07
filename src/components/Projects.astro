@@ -1,0 +1,56 @@
+---
+import Code from "../icons/astro/Code.astro"
+import Github from "../icons/astro/Github.astro"
+import Link from "../icons/astro/Link.astro"
+
+const PROJECTS = [
+  {
+    title:"Aplicacion para el manejo de tareas",
+    description:"Aplicación para el registro de tareas diarias de las personas, tienes diversas opciones para cada tarea registrada",
+    link:"https://todo-app-nine-silk.vercel.app/",
+    github:"https://github.com/chris-dev-software/todo-app",
+    tags:["HTML","React","TailwindCSS","Git"],
+    image:"/projects/todo-app.png"
+  }
+]
+
+---
+<section id="#proyectos" class="container w-full mx-auto md:max-w-2xl lg:max-w-4xl">
+  <div class="px-4 py-8 sm:py-10 md:py-16">
+    <h2 class="flex gap-2 items-center font-semibold text-xl sm:text-2xl md:text-3xl tracking-wide">
+      <Code class="size-8" />
+      Proyectos
+    </h2>
+
+    <div class="grid grid-cols-1 md:sm:grid-cols-2 gap-10 mt-16">
+      {
+        PROJECTS.map(({ title, description, link, github, tags, image })=>(
+          <article class="flex flex-col gap-5">
+            <img class="rounded-md shadow-md shadow-white/20" src={image} alt={`Captura de pantalla de la ${title}`}/>  
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">{title}</h3>
+              <ul class="flex flex-wrap items-center gap-2 mb-2">
+                {
+                  tags.map(tag=> (
+                    <li class="text-xs px-4 py-0.5 rounded-xl bg-white/5">{tag}</li>
+                  ))
+                }
+              </ul>
+              <p class="text-neutral-200 leading-relaxed mb-2">{description}</p>
+              <div class="flex items-center gap-2">
+                <a class="flex gap-1 items-center border border-sky-400 bg-sky-400/10 rounded-full px-4 py-1" href={github}> 
+                  <Github />
+                  Código
+                </a>
+                <a class="flex gap-1 items-center border border-sky-400 bg-sky-400/10 rounded-full px-4 py-1" href={link}>
+                  <Link /> 
+                  Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
