@@ -26,9 +26,6 @@ function Header() {
               <a onClick={()=>setMenu(false)} class="block rounded-md px-4 py-1 hover:bg-white/5 transition-colors" href="#proyectos">Proyectos</a>
             </li>
             <li>
-              <a onClick={()=>setMenu(false)} class="block rounded-md px-4 py-1 hover:bg-white/5 transition-colors" href="#sobre-mi">Sobre mi</a>
-            </li>
-            <li>
               <a onClick={()=>setMenu(false)} class="block rounded-md px-4 py-1 hover:bg-white/5 transition-colors" href="#contacto">Contacto</a>
             </li>
           </ul>
